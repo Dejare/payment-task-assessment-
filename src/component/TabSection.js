@@ -5,19 +5,24 @@ import { BillingInfo } from './BillingInfo'
 import { ConfirmPayment } from './ConfirmPayment'
 export function TabSection(props) {
 
+    const nextTab = (e) => {
+        e.preventDefault()
+
+    }
+
 
     return (
         <>
-            <Tabs className="mt-10" selectedTabClassName='text-[#F2994A] border-b-4 rounded-sm pb-2 border-[#F2994A]'>
+            <Tabs className="mt-10" selectedTabClassName='text-[#F2994A] border-b-[8px] items-center flex rounded-[5px] pb-2 border-[#F2994A] z-10'>
                 <TabList className="flex flex-row w-[90vw] md:w-[40vw] justify-between border-b border-black font-bold text-[#BDBDBD] outline-0" >
                     <Tab className="outline-0">Personal Info</Tab>
                     <Tab className="outline-0">Billing Info</Tab>
-                    <Tab className="outline-0">Confirm Payment</Tab>
+                    <Tab className="outline-0" >Confirm Payment</Tab>
 
                 </TabList>
 
                 <TabPanel>
-                    <PersonalInfo />
+                    <PersonalInfo nextTab={nextTab} />
                 </TabPanel>
                 <TabPanel>
                     <BillingInfo />

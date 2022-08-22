@@ -5,7 +5,7 @@ export function ConfirmPayment(props) {
 
     return (
         <>
-            <div className='w-full h-full bg-white rounded-t-xl mt-10 items-start'>
+            <div className='w-full h-full bg-white rounded-t-xl mt-10 items-start shadow-xl'>
                 <div className='w-full py-4 bg-[#2F80ED] rounded-t-xl flex flex-row justify-around text-white'>
                     <div>
                         Item name
@@ -33,7 +33,7 @@ export function ConfirmPayment(props) {
                 </div>
             </div>
             <div className='flex flex-row mt-10'>
-                <button className='btn'>Pay</button>
+                <button className='btn'> <a href="/complete">Pay</a></button>
                 <button className='text-[#4E598C] font-bold'>Cancel Payment</button>
             </div>
 

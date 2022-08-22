@@ -1,14 +1,26 @@
-import "./assets/styles/main.scss";
-import { TabSection } from './component/TabSection';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import PurchaseComplete from "./component/PurchaseComplete";
+import Home from "./Home";
+
 
 function App() {
   return (
-    <section className="absolute top-[10%] text-white left-[50%] -translate-x-2/4 md:translate-x-0 md:left-[25%] secc">
-      <div className='heading font-bold'>Complete your Purchase</div>
-
-      {/* TAB SeCtion */}
-      <TabSection />
-    </section>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/complete">
+          <PurchaseComplete />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

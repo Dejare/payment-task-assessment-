@@ -1,6 +1,6 @@
 import React from 'react'
 import "./component.scss"
-export function PersonalInfo() {
+export function PersonalInfo({ nextTab }) {
 
 
     return (
@@ -48,7 +48,7 @@ export function PersonalInfo() {
 
 
                 <div className='flex flex-row mb-10'>
-                    <button className='btn'>Next</button>
+                    <button className='btn' onClick={nextTab}>Next</button>
                     <button className='text-[#4E598C] font-bold'>Cancel Payment</button>
                 </div>
             </form>
