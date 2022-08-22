@@ -5,7 +5,7 @@ const PurchaseComplete = () => {
     return (
         <div className="purchaseCompleteContainer">
             <div className="main ">
-                <div className="w-3/4 m-auto">
+                <div className="md:w-3/4 m-auto">
                     <div className="imageCircle my-4">
                         <img src={checkMark} alt="Purchase Complete" />
                     </div>

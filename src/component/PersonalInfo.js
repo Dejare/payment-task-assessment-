@@ -5,7 +5,7 @@ export function PersonalInfo({ nextTab }) {
 
     return (
         <>
-            <form className='flex flex-col md:w-[40vw] justify-between border-b border-black'>
+            <form className='flex flex-col md:w-[40vw] justify-between '>
                 <div className='flex flex-col mt-8 w-[100%]'>
                     <label htmlFor="Name" className='font-semibold mb-3'>Name</label>
                     <input type="text" placeholder='Opara Linus Ahmed' className='inputOne focus:ring-1 ' />

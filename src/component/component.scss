@@ -48,6 +48,11 @@ select {
         justify-content: space-evenly;
         flex-direction: column;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        @media screen and (max-width: 768px) {
+            width: 94vw;
+            height: 50vh;
+        }
+
         h1 {
             color: #4e598c;
             font-weight: 700;
