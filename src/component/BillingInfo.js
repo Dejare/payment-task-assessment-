@@ -23,17 +23,17 @@ export function BillingInfo(props) {
                 </div>
 
 
-                <div className='flex flex-row mt-8 w-[100%] items-center align-middle mb-10 justify-between'>
-                    <div className='flex flex-col w-[60%] mr-4'>
+                <div className='flex flex-row mt-8 w-[100%] items-center align-middle mb-10 justify-between flex-wrap'>
+                    <div className='flex flex-col w-full md:w-[50%] md:mr-4'>
                         <label htmlFor="Name" className='font-semibold mb-3'>Local Government</label>
                         <input type="text" className='w-[50%] inputOne focus:ring-1 ' placeholder='Surulere' />
                     </div>
-                    <div className='flex flex-col w-[20%]'>
+                    <div className='flex flex-col w-[50%] md:w-[20%] mt-8 md:mt-0'>
                         <label htmlFor="Name" className='font-semibold mb-3'>Expiry date <sup className='text-red-500'>*</sup></label>
                         <input type="text" placeholder="04 / 23" className='inputOne' />
 
                     </div>
-                    <div className='flex flex-col w-[20%] ml-4'>
+                    <div className='flex flex-col w-[40%] md:w-[20%] ml-4 mt-8 md:mt-0'>
                         <label htmlFor="Name" className='font-semibold mb-3'>CVV <sup className='text-red-500'>*</sup></label>
                         <input type="text" placeholder="923" className='inputOne' />
 
