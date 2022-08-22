@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function BillingInfo(props) {
+export function BillingInfo({ nextTab }) {
 
 
     return (
@@ -40,7 +40,7 @@ export function BillingInfo(props) {
                     </div>
                 </div>
                 <div className='flex flex-row mb-10'>
-                    <button className='btn'>Next</button>
+                    <button className='btn' onClick={nextTab}>Next</button>
                     <button className='text-[#4E598C] font-bold'>Cancel Payment</button>
                 </div>
             </form>
